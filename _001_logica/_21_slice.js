@@ -4,6 +4,7 @@ let arr = [0, 1, 2, 3, "quatro", "cinco"];
 // sem primeiro argumento, começa do início
 // sem segundo argumento, vai até o fim
 // sem argumentos, retorna cópia do array todo
+
 // slice(início, fim)
 let arr2 = arr.slice(1, 5);
 console.log(arr, arr2);
