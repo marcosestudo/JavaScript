@@ -1,4 +1,4 @@
-let arr = [0,1 ,2];
+let arr = [0, 1, 2];
 
 // unshift() adiciona elemento no início e retorna novo tamanho do array
 console.log(arr.unshift(10));
