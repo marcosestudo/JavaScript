@@ -7,7 +7,7 @@ console.log(arr);
 console.log(arr.unshift(100));
 console.log(arr);
 
-// shift remove e retorna primeiro elemento do array
+// shift() remove e retorna primeiro elemento do array
 console.log(arr.shift());
 console.log(arr);
 
