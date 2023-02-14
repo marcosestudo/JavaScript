@@ -4,8 +4,8 @@ const matriz = [ // L = linha, C = coluna
   ["L2, C0", "L2, C1", "L2, C2"]
 ];
 
-matriz[0].push(["L0, C4"]);
-matriz.push(["L3, C0"]);
+matriz[0].push("nova coluna");
+matriz.push(["nova linha"]);
 console.table(matriz);
 
 
