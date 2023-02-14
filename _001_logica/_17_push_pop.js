@@ -1,6 +1,6 @@
 // push() insere elemento no final do array
 // útil parar iserir elemento sem precisar saber o tamanho do array
-let arr = [];
+const arr = []; // funcionam em constante
 console.log(arr);
 
 arr.push(1);
