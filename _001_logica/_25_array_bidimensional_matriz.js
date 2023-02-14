@@ -15,6 +15,8 @@ console.log(arr[2]);
 console.log(arr[2][0]);
 console.log(arr[2][0][0]); // terceiro nível, 3 colchetes encadeados
 
+
+
 const matriz = [ // L = linha, C = coluna
   ["L0, C0", "L0, C1", "L0, C2"],
   ["L1, C0", "L1, C1", "L1, C2"],
