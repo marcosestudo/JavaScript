@@ -13,3 +13,17 @@ dobro(7);
 // o valor usado para ele será o undefined
 dobro();
 
+
+
+// VALOR PADRÃO 
+// Mas podemos declarar um valor padrão para um parãmetro, assim, 
+// se ele não for informado, o valor padrão será usado no lugar do undefined
+function dizerOla(nome = "mundo") {
+  console.log("Olá, " + nome + "!")
+}
+
+dizerOla("Marcso");
+dizerOla();
+
+
+
