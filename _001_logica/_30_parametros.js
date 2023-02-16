@@ -41,8 +41,33 @@ soma(34, 5);
 // VALOR PADRÃO
 // Ao usar vários parâmetros, deixamos os com valor padrão por último
 function criarUsuario(nome, email, senha, tipo = "leitor") {
-  const usuario = { nome, email, senha, tipo };
+  const usuario = { nome, email, senha, tipo }
   console.log(usuario);
 }
 
 criarUsuario("Marcos", "marcos@email.com", "1234");
+
+
+
+// BOA PRÁTICA
+// Ao criarmos uma função com muitos parâmetros,
+// uma boa prática é substituí-los por um objeto
+function parametrosDoJeitoErrado(nome, telefone, endereco, aniversario, email, senha) {
+  // ...
+}
+function parametrosDoJeitoCerto(usuario) {
+  // ...
+}
+
+// Além de facilitar na chamada da função, a ordem dos parâmetros se torna irrelevante
+parametrosDoJeitoErrado("nome", "telefone", "endereco", "aniversario", "email", "senha"); 
+
+const dadosDoUsuario = {
+  nome: "nome",
+  telefone: "telefone",
+  email: "email",
+  senha: "senha",
+  aniversario: "aniversario",
+  endereco: "endereco"
+}
+parametrosDoJeitoCerto(dadosDoUsuario);
