@@ -35,3 +35,14 @@ function soma(a, b) {
 
 soma(1, 1);
 soma(34, 5);
+
+
+
+// VALOR PADRÃO
+// Ao usar vários parâmetros, deixamos os com valor padrão por último
+function criarUsuario(nome, email, senha, tipo = "leitor") {
+  const usuario = { nome, email, senha, tipo };
+  console.log(usuario);
+}
+
+criarUsuario("Marcos", "marcos@email.com", "1234");
