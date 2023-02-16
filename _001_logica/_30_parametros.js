@@ -27,3 +27,11 @@ dizerOla();
 
 
 
+// MÚLTIPLOS PARÂMETROS
+// Uma função pode ter quantos parâmetros quisermos, basta separaá-los por vírgula
+function soma(a, b) {
+  console.log(a + b)
+}
+
+soma(1, 1);
+soma(34, 5);
