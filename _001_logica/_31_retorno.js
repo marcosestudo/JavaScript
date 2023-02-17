@@ -18,6 +18,12 @@ function criarProduto(nome, preco) {
   return produto
 }
 
-const notebook = criarProduto("Notebook Intel Core i3 8GB", 3000);
+const notebook = criarProduto("TV", 3000);
 
 console.log(notebook);
+
+
+
+
+// Também podemos jogar a saída de uma função dentro dos parâmetros de outra
+console.log(criarProduto("Celular", 1000));
