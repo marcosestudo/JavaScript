@@ -38,7 +38,7 @@ soma(34, 5);
 
 
 
-// VALOR PADRÃO
+// ORDEM
 // Ao usar vários parâmetros, deixamos os com valor padrão por último
 function criarUsuario(nome, email, senha, tipo = "leitor") {
   const usuario = { nome, email, senha, tipo }
