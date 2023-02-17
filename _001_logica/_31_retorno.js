@@ -12,7 +12,11 @@ console.log(resultado);
 
 // Para dizer qual é a saída de uma função usamos o return
 function criarProduto(nome, preco) {
-  const produto = { nome, preco, estoque: 1 }
+  const produto = {
+    nome,
+    preco,
+    estoque: 1
+  }
   return produto;
 }
 const notebook = criarProduto("TV", 3000);
