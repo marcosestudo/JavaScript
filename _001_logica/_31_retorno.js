@@ -55,10 +55,10 @@ console.log(olaMundo());
 // da função podem ter diferentes retornos
 function maioridade(idade) {
   if (idade >= 18) {
-    return "Maior de idade"
+    return "Maior de idade";
   } else {
-    return "Menor de idade"
+    return "Menor de idade";
   }
 }
-console.log(maioridade(20))
-console.log(maioridade(13))
+console.log(maioridade(20));
+console.log(maioridade(13));
