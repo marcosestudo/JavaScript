@@ -47,3 +47,14 @@ function ola() {
   var texto = "Olá, mundo!";
 }
 // console.log(texto) // Gera erro
+
+
+
+// Apenas variáveis declaradas com var são carregadas
+// sempre no começo do código, acima de todo o resto
+console.log(nome);
+// console.log(sobrenome); // Gera erro
+var nome = "Marcos";
+let sobrenome = "Machado";
+console.log(nome);
+console.log(sobrenome);
