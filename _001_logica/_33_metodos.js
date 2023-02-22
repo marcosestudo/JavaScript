@@ -7,4 +7,6 @@ let pessoa = {
   }
 }
 
+console.log(typeof pessoa);
+console.log(typeof pessoa.fala);
 pessoa.fala();
