@@ -2,8 +2,8 @@
 
 let pessoa = {
   nome: "Marcos",
-  fala: function() {
-    console.log("Olá...");
+  fala: function() { // pra criação de métodos, não precisa usar a palavra resrevada function
+    console.log(`Olá... ${this.nome}`);
   }
 }
 
