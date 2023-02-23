@@ -16,7 +16,7 @@ console.log(pokemon);
 // Variáveis no escopo mais interno não podem ser
 // usadas fora dele em escopos mais internos
 function criarAnimal() {
-  let animal = "Gato";
+  let animal = "Gato"; // "animal" é declarado, mas seu valor nunca é lido
 }
 
 criarAnimal();
@@ -25,7 +25,7 @@ criarAnimal();
 
 
 // Apenas variáveis declaradas com var ficam
-// disponíveis em um escopo mais externo
+// disponíveis em um escopo mais externo saindo do if
 function avaliarNota(nota) {
   if (nota > 60) {
     var aprovado = true;
@@ -43,6 +43,7 @@ avaliarNota(83);
 avaliarNota(49);
 
 // Mas mesmo o var não consegue "sair" para fora do escopo da função
+// sai do if else, mas não sai da função
 function ola() {
   var texto = "Olá, mundo!";
 }
