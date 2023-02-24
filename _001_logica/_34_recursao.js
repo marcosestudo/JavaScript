@@ -1,12 +1,12 @@
 // uma função recursiva é uma função que chama ela mesma
 
-let x = 0;
+let num = 0;
 
-function zero_a_dez(inicio) {
-  if (inicio <= 10) {
+function recursiva(inicio) {
+  if (inicio < 5) {
     console.log(inicio);
-    zero_a_dez(inicio + 1);
+    recursiva(inicio + 1);
   }
 }
 
-zero_a_dez(x);
+recursiva(num);
