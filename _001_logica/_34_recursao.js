@@ -19,3 +19,12 @@ function dividir(num) {
   }
 }
 dividir(40);
+
+
+
+// // sem condição de parada, a função recursiva cria um loop "infinito" até estourar o limite da pilha de execução
+// function dobrar(x){
+//   console.log(x);
+//   dobrar(x * 2);
+// }
+// dobrar(1);
