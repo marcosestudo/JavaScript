@@ -1,4 +1,4 @@
-// uma função recursiva é uma função que chama ela mesma
+// Uma função recursiva é uma função que chama ela mesma
 function recursiva(inicio) {
   if (inicio < 5) {
     console.log(inicio);
@@ -9,10 +9,10 @@ function recursiva(inicio) {
 
 
 
-// mais um exemplo de função recursiva
+// Mais um exemplo de função recursiva
 function dividir(num) {
   console.log(num);
-  if (num % 2 === 0 && num > 0) { // se for par, divide de novo por 2
+  if (num % 2 === 0 && num > 0) { // Se for par, divide de novo por 2
     dividir(num / 2);
   } else {
     return num;
@@ -22,7 +22,7 @@ function dividir(num) {
 
 
 
-// sem condição de parada, a função recursiva cria um loop "infinito" até estourar o limite da pilha de execução
+// Sem condição de parada, a função recursiva cria um loop "infinito" até estourar o limite da pilha de execução
 function dobrar(x){
   console.log(x);
   dobrar(x * 2);
@@ -31,8 +31,8 @@ function dobrar(x){
 
 
 
-// caso base
-// funções recursivas devem ter um caso base para nunca cairem num loop
+// Caso base
+// Funções recursivas devem ter um caso base para nunca cairem num loop
 // no fatorial, o caso base é "num === 0 || num === 1"
 function fatorial(num) {
   if (num === 0 || num === 1) {

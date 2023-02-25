@@ -1,8 +1,8 @@
-// métodos são as funções de um objeto
+// Métodos são as funções de um objeto
 
 let pessoa = {
   nome: "Marcos",
-  fala: function() { // pra criação de métodos, não precisa usar a palavra resrevada function
+  fala: function() { // Pra criação de métodos, não precisa usar a palavra resrevada function
     console.log(`Olá... ${this.nome}`);
   }
 }
