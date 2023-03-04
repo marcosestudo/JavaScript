@@ -27,3 +27,22 @@ const racas = personagens.reduce(function (acumulador, personagem) {
   }
   return acumulador
 }, {});
+
+let nivelTotal3 = 0
+for (let i = 0; i < personagens.length; i++) {
+  nivelTotal += personagens[i].nivel
+}
+// reduce: serve para reduzir um array existente a um valor final qualquer,
+// passando um valor entre cada iteração sobre esse array e retornando ele no final
+const nivelTotal4 = personagens.reduce(function (acumulador, personagem) {
+  return acumulador + personagem.nivel
+}, 0)
+
+const racas2 = personagens.reduce(function (acumulador, personagem) {
+  if (acumulador[personagem.raca]) {
+    acumulador[personagem.raca].push(personagem)
+  } else {
+    acumulador[personagem.raca] = [personagem]
+  }
+  return acumulador
+}, {})
