@@ -14,3 +14,4 @@ const personagens = [
 personagens.sort(function (a, b) {
   return a.nivel - b.nivel;
 });
+personagens.forEach((personagem) => console.log(personagem.nivel));
