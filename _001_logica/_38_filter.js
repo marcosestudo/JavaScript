@@ -15,9 +15,11 @@ for (let i = 0; i < personagens.length; i++) {
     orcs.push(personagem);
   }
 }
+console.log(orcs);
 
 // filter: permite obter um novo array contendo apenas elementos específicos de um array existente
 // O elemento que satisfizer a condição, entra no array novo
 const orcs2 = personagens.filter(function (personagem) {
   return personagem.raca === "Orc";
 });
+console.log(orcs2);
