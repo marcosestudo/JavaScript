@@ -21,7 +21,7 @@ for (let i = 0; i < personagens.length; i++) {
 // passando um valor entre cada iteração sobre esse array e retornando ele no final
 const nivelTotal2 = personagens.reduce(function (acumulador, personagem) {
   return acumulador + personagem.nivel;
-}, 0);
+}, 0); // segundo argumento do reduce é o valor inicial do acumulador
 
 const racas = personagens.reduce(function (acumulador, personagem) {
   if (acumulador[personagem.raca]) {
