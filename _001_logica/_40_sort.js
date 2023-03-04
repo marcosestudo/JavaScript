@@ -10,6 +10,7 @@ const personagens = [
 
 // sort 
 // Ordena os elementos de um array a partir de comparações entre duplas de elementos
+// CUIDADO: o sort modifica o array original
 personagens.sort(function (a, b) {
   return a.nivel - b.nivel;
 });
