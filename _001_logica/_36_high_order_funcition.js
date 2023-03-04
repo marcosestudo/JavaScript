@@ -19,3 +19,12 @@ function somar(x, y) {
 console.log(calcular(3, 5, somar));
 console.log(somar);      // Printa a própria função
 console.log(somar(1, 1)); // Chama a função (printa o retorno da função)
+
+
+
+// Função anõnima como parâmetro
+// Também podemos escrever funções anônimas dentro da própria chamada da high-order function
+calcular(9, 2, function (x, y) {
+  console.log("Realizando substração.")
+  return x - y
+})
