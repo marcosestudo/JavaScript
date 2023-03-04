@@ -23,11 +23,17 @@ const nivelTotal2 = personagens.reduce(function (acumulador, personagem) {
   return acumulador + personagem.nivel;
 }, 0); // segundo argumento do reduce é o valor inicial do acumulador
 
+
+
+// Usando o reduce pra criar um array separando os elementos por raça
 const racas = personagens.reduce(function (acumulador, personagem) {
-  if (acumulador[personagem.raca]) {
-    acumulador[personagem.raca].push(personagem);
-  } else {
+  // se a raca na chave personagem.raca for igual a do acumulador, adiciona o personagem naquela chave
+  if (acumulador[personagem.raca]) { // Está sendo usada a notação de colchetes para verificar o objeto acumulador
+    acumulador[personagem.raca].push(personagem); // Dando push do personagem no array da raça
+  // Se não, cria uma nova chave contendo um array com o personagem da nova raça
+  } else { 
     acumulador[personagem.raca] = [personagem];
   }
   return acumulador;
-}, {});
+}, {}); // segundo parâmetro será um objeto vazio, já que nesse caso queremos retornar um objeto
+console.log(racas);
